@@ -1,0 +1,2 @@
+rootProject.name='DatamigoPrototype'
+include ':app'

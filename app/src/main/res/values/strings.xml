@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">DatamigoPrototype</string>
+    <string name="title_activity_three">ThreeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Nombre Tienda</string>
+    <string name="nav_header_propietario">Propietario:</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_usario">Usuario</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="inicio_sesion">Inicio de Sesión</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="usuario">Usuario</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="reciente">Facturas recientes</string>
+    <string name="detalles">Detalles</string>
+    <string name="nombre_propietario">Nombre Propietario</string>
+    <string name="estado_sucripcion">Estado de Suscripción:</string>
+    <string name="suscripcion">Activo hasta dd/mm/yyyy</string>
+    <string name="menu_usuario">Usuario</string>
+    <string name="cambiar_correo">Cambiar Correo</string>
+    <string name="correo_actual">Correo Actual</string>
+    <string name="nuevo_correo">Nuevo Correo</string>
+    <string name="cambiar_contraseña">Cambiar Contraseña</string>
+    <string name="constraseña_actual">Contraseña Actual</string>
+    <string name="clave_nueva">Contraseña Nueva</string>
+    <string name="cambiar_datos_correo">Cambiar</string>
+    <string name="cambiar_datos_contraseña">Cambiar</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="registro">Registro</string>
+    <string name="registrar">Registrar</string>
+    <string name="nombre_tienda">Nombre Tienda</string>
+    <string name="nombres_propietario">Nombre(s) Propietario</string>
+    <string name="apellidos_propietario">Apellidos del Propietario</string>
+    <string name="nit_tienda">NIT de la tienda</string>
+    <string name="repetir_nit">Repetir NIT de la tienda</string>
+    <string name="correo">Correo</string>
+    <string name="repetir_correo">Repetir Correo</string>
+    <string name="repetir_contraseña">Repetir Contraseña</string>
+</resources>
