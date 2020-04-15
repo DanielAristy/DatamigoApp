@@ -10,10 +10,10 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/crear_factura"
-        android:textSize="20dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/cargar_imagen_factura"
         android:textColor="@color/black"
+        android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,42 +22,54 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/boton_elipse"
+        android:onClick="loadImage"
+        android:text="@string/tomar_foto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.86" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/boton_elipse"
+        android:onClick="selectImage"
+        android:text="@string/seleccionar_imagen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0" />
+
     <ImageView
         android:id="@+id/imgFactura"
-        android:layout_width="116dp"
-        android:layout_height="99dp"
+        android:layout_width="391dp"
+        android:layout_height="425dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/ic_photo" />
+        app:srcCompat="@drawable/factura" />
 
-    <Button
-        android:id="@+id/btnCargarImagen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/boton_elipse"
-        android:text="@string/cargar_imagen"
-        android:onClick="loadImage"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgFactura"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="OnClick" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCargarImagen"
-        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

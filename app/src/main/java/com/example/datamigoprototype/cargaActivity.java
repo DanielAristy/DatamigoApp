@@ -4,10 +4,12 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 public class cargaActivity extends AppCompatActivity {
@@ -21,21 +23,32 @@ public class cargaActivity extends AppCompatActivity {
     }
 
     public void loadImage(View view) {
+
+        tomarFoto();
+    }
+    public void selectImage(View view) {
         cargarImagen();
     }
 
+    private void tomarFoto(){
+        Intent tomarFoto = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        startActivityForResult(tomarFoto,200);
+    }
     private void cargarImagen() {
-        Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-        intent.setType("imagen/");
-        startActivityForResult(intent.createChooser(intent,"Seleccione la aplicacion"),10);
+        Intent cargarFoto = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+        startActivityForResult(cargarFoto, 100);
     }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (resultCode == RESULT_OK) {
-            Uri path = data.getData();
-            imageView.setImageURI(path);
+        if (requestCode == 100 && resultCode == RESULT_OK) {
+            imageView.setImageURI(data.getData());
+        }
+        if (requestCode == 200 && resultCode == RESULT_OK) {
+            imageView.setImageBitmap((Bitmap) data.getExtras().get("data"));
         }
     }
+
+
 }

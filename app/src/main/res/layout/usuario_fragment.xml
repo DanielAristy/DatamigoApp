@@ -53,7 +53,7 @@
         android:id="@+id/txtCmbiarClave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="16dp"
         android:text="@string/cambiar_contraseña"
         android:textColor="@color/black"
         android:textSize="@dimen/txt_titulo_datos"
@@ -61,7 +61,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCambiarCorreo"
+        app:layout_constraintTop_toBottomOf="@+id/txtCorreoNuevo"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
@@ -93,25 +93,14 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/btnCambiarCorreo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/boton_elipse"
-        android:text="@string/cambiar_datos_correo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtCorreoNuevo"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
         android:id="@+id/btnCambiarClave"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/boton_elipse"
-        android:text="@string/cambiar_datos_contraseña"
+        android:text="@string/cambiar_datos"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
