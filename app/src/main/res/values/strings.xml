@@ -42,4 +42,6 @@
     <string name="correo">Correo</string>
     <string name="repetir_correo">Repetir Correo</string>
     <string name="repetir_contraseña">Repetir Contraseña</string>
+    <string name="crear_factura">Crear Factura</string>
+    <string name="cargar_imagen">Cargar Imagen</string>
 </resources>

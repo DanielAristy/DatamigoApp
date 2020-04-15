@@ -98,7 +98,6 @@
                 android:background="@drawable/boton_elipse"
                 android:ellipsize="start"
                 android:fontFamily="sans-serif"
-                android:onClick="onClickFromLayout"
                 android:text="@string/detalles"
                 android:textAlignment="center"
                 android:textColor="#fff"
