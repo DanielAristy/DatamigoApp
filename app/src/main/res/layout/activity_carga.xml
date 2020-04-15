@@ -95,16 +95,23 @@
                 android:hint="@string/valor"
                 android:inputType="number" />
 
+            <Button
+                android:id="@+id/btnFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/boton_elipse"
+                android:backgroundTint="#009688"
+                android:text="@string/fecha" />
+
             <EditText
-                android:id="@+id/txtFecha"
-                android:layout_width="match_parent"
+                android:id="@+id/txtPickerFecha"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="@string/fecha"
-                android:layout_marginTop="8dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:inputType="date" />
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="-50dp"
+                android:inputType="textPersonName" />
 
             <Button
                 android:id="@+id/btnRegistrarFactura"
@@ -117,6 +124,8 @@
                 android:onClick="registrarFactura"
                 android:background="@drawable/boton_elipse"
                 android:text="@string/registrar" />
+
+
 
         </LinearLayout>
     </ScrollView>
