@@ -63,4 +63,9 @@ public class ThreeActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
+    public void actualizarDatos(View view){
+        Intent actualizar = new Intent(this,MainActivity.class);
+        startActivity(actualizar);
+    }
 }

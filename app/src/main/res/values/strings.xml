@@ -40,9 +40,14 @@
     <string name="correo">Correo</string>
     <string name="repetir_correo">Repetir Correo</string>
     <string name="repetir_contraseña">Repetir Contraseña</string>
-    <string name="cargar_imagen_factura">Cargar imagen Factura</string>
     <string name="cargar_imagen">Cargar Imagen</string>
     <string name="tomar_foto">Tomar Foto</string>
     <string name="seleccionar_imagen">Seleccionar Imagen</string>
     <string name="cambiar_datos">Actualizar Datos</string>
+    <string name="registro_factura">Registro de Factura</string>
+    <string name="imagen_factura">Imagen Factura</string>
+    <string name="nit_proveedor">Nit Proveedor</string>
+    <string name="valor">Valor Factura</string>
+    <string name="fecha">Fecha</string>
+    <string name="registrar_tienda">Registrar Tienda</string>
 </resources>

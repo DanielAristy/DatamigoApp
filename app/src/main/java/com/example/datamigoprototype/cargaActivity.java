@@ -51,4 +51,8 @@ public class cargaActivity extends AppCompatActivity {
     }
 
 
+    public void registrarFactura(View view) {
+        Intent registroFactura = new Intent(this,ThreeActivity.class);
+        startActivity(registroFactura);
+    }
 }
