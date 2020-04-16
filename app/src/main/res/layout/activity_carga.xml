@@ -14,9 +14,9 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:text="@string/registro_factura"
-        android:textSize="30dp"
+        android:textSize="35dp"
         android:layout_marginTop="16dp"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="16dp"
         android:textColor="@color/black"
         android:textStyle="bold" />
 
@@ -36,7 +36,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/imagen_factura"
                 android:textAlignment="center"
-                android:textSize="20dp"
+                android:textSize="25dp"
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 />
@@ -52,9 +52,9 @@
                 android:id="@+id/btnTomarFoto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="100dp"
+                android:layout_marginRight="220dp"
+                android:layout_marginLeft="16dp"
                 android:layout_marginTop="8dp"
-                android:layout_marginRight="100dp"
                 android:background="@drawable/boton_elipse"
                 android:backgroundTint="#8BC34A"
                 android:onClick="loadImage"
@@ -64,20 +64,32 @@
                 android:id="@+id/btnSeleccionarFoto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="100dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginRight="100dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginRight="16dp"
                 android:background="@drawable/boton_elipse"
                 android:backgroundTint="#8BC34A"
                 android:onClick="selectImage"
                 android:text="@string/seleccionar_imagen" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ingresar_datos"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+                android:textAlignment="center"
+                />
 
             <EditText
                 android:id="@+id/txtNitFactura"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:hint="@string/nit_proveedor"
@@ -89,7 +101,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:hint="@string/valor"
@@ -100,18 +112,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/boton_elipse"
                 android:backgroundTint="#009688"
                 android:text="@string/fecha" />
 
-            <EditText
+            <TextView
                 android:id="@+id/txtPickerFecha"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
                 android:layout_marginLeft="150dp"
-                android:layout_marginTop="-50dp"
-                android:inputType="textPersonName" />
+                android:layout_marginRight="50dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="-40dp"/>
 
             <Button
                 android:id="@+id/btnRegistrarFactura"
@@ -119,11 +135,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="16dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="8dp"
                 android:onClick="registrarFactura"
                 android:background="@drawable/boton_elipse"
                 android:text="@string/registrar" />
+
 
 
 
