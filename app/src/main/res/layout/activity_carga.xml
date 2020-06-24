@@ -43,8 +43,10 @@
 
             <ImageView
                 android:id="@+id/imgFactura"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="200sp"
+                android:layout_height="200sp"
+                android:layout_gravity="center"
+                android:background="@color/fondoPDF"
                 android:layout_marginTop="8dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
@@ -91,9 +93,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
+                android:drawablePadding="12dp"
+                android:drawableStart="@drawable/vector_nit"
+                android:layout_margin="16dp"
                 android:hint="@string/nit_proveedor"
                 android:inputType="textPersonName"
                 />
@@ -103,9 +105,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:layout_marginTop="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
+                android:drawablePadding="16dp"
+                android:drawableStart="@drawable/vector_value"
+                android:layout_margin="12dp"
                 android:hint="@string/valor"
                 android:inputType="number" />
 
@@ -143,13 +145,7 @@
                 android:background="@drawable/boton_elipse"
                 android:text="@string/registrar" />
 
-
-
-
         </LinearLayout>
     </ScrollView>
-
-
-
 
 </LinearLayout>

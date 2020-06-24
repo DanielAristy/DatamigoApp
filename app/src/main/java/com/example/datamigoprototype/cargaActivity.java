@@ -17,12 +17,13 @@ import android.widget.TextView;
 
 import java.util.Calendar;
 
-public class cargaActivity extends AppCompatActivity implements View.OnClickListener {
+public class  cargaActivity extends AppCompatActivity implements View.OnClickListener {
 
     ImageView imageView;
     Button btnFecha;
     TextView txtPickerFecha;
     int month, day, year;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
