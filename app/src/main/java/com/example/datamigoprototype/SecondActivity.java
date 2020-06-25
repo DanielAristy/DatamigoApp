@@ -29,7 +29,7 @@ public class SecondActivity extends AppCompatActivity {
 
     }
 
-    public void loguearChecbBox(View view) {
+    public void loguearCheckBox(View view) {
         s = "Estado: " + (checkBox.isChecked() ? "Marcado" : "No marcado");
         Toast.makeText(this, s , Toast.LENGTH_SHORT).show();
     }
