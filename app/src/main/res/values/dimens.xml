@@ -6,5 +6,5 @@
     <dimen name="nav_header_height">176dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="txt_titulo_datos">20dp</dimen>
-    <dimen name="titulo_activity">25dp</dimen>
+    <dimen name="titulo_activity">25sp</dimen>
 </resources>

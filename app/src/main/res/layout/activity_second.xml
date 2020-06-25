@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".SecondActivity">
 
     <TextView
@@ -21,7 +21,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
-    
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -33,13 +33,11 @@
 
             <EditText
                 android:id="@+id/txtNombreTienda"
+                style="@style/AppTheme.EditTextStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                android:layout_margin="12dp"
-                android:ems="10"
-                android:drawablePadding="16dp"
                 android:drawableStart="@drawable/vector_home"
                 android:hint="@string/nombre_tienda"
                 android:inputType="textPersonName"
@@ -51,12 +49,10 @@
 
             <EditText
                 android:id="@+id/txtNombrePropietario"
+                style="@style/AppTheme.EditTextStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/txtNombreTienda"
-                android:layout_margin="12dp"
-                android:ems="10"
-                android:drawablePadding="16dp"
                 android:drawableStart="@drawable/vector_name"
                 android:hint="@string/nombres_propietario"
                 android:inputType="textPersonName"
@@ -68,12 +64,10 @@
 
             <EditText
                 android:id="@+id/txtApellidoPropietario"
+                style="@style/AppTheme.EditTextStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="12dp"
                 android:layout_below="@+id/txtNombrePropietario"
-                android:ems="10"
-                android:drawablePadding="16dp"
                 android:drawableStart="@drawable/vector_name"
                 android:hint="@string/apellidos_propietario"
                 android:inputType="textPersonName"
@@ -85,12 +79,10 @@
 
             <EditText
                 android:id="@+id/NIT"
+                style="@style/AppTheme.EditTextStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="12dp"
                 android:layout_below="@+id/txtApellidoPropietario"
-                android:ems="10"
-                android:drawablePadding="16dp"
                 android:drawableStart="@drawable/vector_nit"
                 android:hint="@string/nit_tienda"
                 android:inputType="textPersonName"
@@ -101,13 +93,11 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <EditText
+                style="@style/AppTheme.EditTextStyle"
                 android:id="@+id/repetirNIT"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="12dp"
                 android:layout_below="@+id/NIT"
-                android:ems="10"
-                android:drawablePadding="16dp"
                 android:drawableStart="@drawable/vector_nit"
                 android:hint="@string/repetir_nit"
                 android:inputType="textPersonName"
@@ -118,13 +108,11 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <EditText
+                style="@style/AppTheme.EditTextStyle"
                 android:id="@+id/txtCorreo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="12dp"
                 android:layout_below="@+id/repetirNIT"
-                android:ems="10"
-                android:drawablePadding="16dp"
                 android:drawableStart="@drawable/vector_email"
                 android:hint="@string/correo"
                 android:inputType="textPersonName"
@@ -135,13 +123,11 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <EditText
+                style="@style/AppTheme.EditTextStyle"
                 android:id="@+id/txtRepetirCorreo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="12dp"
                 android:layout_below="@+id/txtCorreo"
-                android:ems="10"
-                android:drawablePadding="16dp"
                 android:drawableStart="@drawable/vector_email"
                 android:hint="@string/repetir_correo"
                 android:inputType="textPersonName"
@@ -153,13 +139,11 @@
 
 
             <EditText
+                style="@style/AppTheme.EditTextStyle"
                 android:id="@+id/txtConstraseña"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="12dp"
                 android:layout_below="@+id/txtRepetirCorreo"
-                android:ems="10"
-                android:drawablePadding="16dp"
                 android:drawableStart="@drawable/vector_lock"
                 android:hint="@string/contraseña"
                 android:inputType="textPassword"
@@ -170,13 +154,11 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <EditText
+                style="@style/AppTheme.EditTextStyle"
                 android:id="@+id/txtRepetirContraseña"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="12dp"
                 android:layout_below="@+id/txtConstraseña"
-                android:ems="10"
-                android:drawablePadding="16dp"
                 android:drawableStart="@drawable/vector_lock"
                 android:hint="@string/repetir_contraseña"
                 android:inputType="textPassword"
@@ -186,6 +168,17 @@
                 app:layout_constraintTop_toBottomOf="@+id/txtConstraseña"
                 app:layout_constraintVertical_bias="0.0" />
 
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtRepetirContraseña"
+                android:layout_alignEnd="@+id/txtRepetirContraseña"
+                android:layout_margin="12dp"
+                android:layout_marginEnd="9dp"
+                android:onClick="loguearChecbBox"
+                android:text="@string/terminos_condiciones" />
+
             <Button
                 android:id="@+id/btnRegistrar"
                 android:layout_width="match_parent"
@@ -193,7 +186,10 @@
                 android:layout_below="@+id/txtRepetirContraseña"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
-                android:layout_margin="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="61dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
                 android:background="@drawable/boton_elipse"
                 android:onClick="goToActivityLogin"
                 android:text="@string/registrar"

@@ -11,6 +11,14 @@
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+
+    </style>
+    
+    <style name="AppTheme.EditTextStyle" parent="AppTheme">
+        <item name="android:textSize">20sp</item>
+        <item name="android:drawablePadding">12dp</item>
+        <item name="android:layout_margin">12dp</item>
+        <item name="android:ems">10</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
